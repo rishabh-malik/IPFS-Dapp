@@ -33,4 +33,5 @@ const abi = [
 		"type": "function"
 	}
 ]
-export default new web3.eth.Contract(abi, address);
+const MyContract = web3.eth.contract(abi)
+export default MyContract.at(address);
